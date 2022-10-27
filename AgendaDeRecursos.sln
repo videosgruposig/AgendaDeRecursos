@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaDeRecursos", "AgendaDeRecursos\AgendaDeRecursos.csproj", "{EAF48A5B-2891-40F4-B583-1414C9BE6EF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAF48A5B-2891-40F4-B583-1414C9BE6EF9}.Debug|x86.ActiveCfg = Debug|x86
+		{EAF48A5B-2891-40F4-B583-1414C9BE6EF9}.Debug|x86.Build.0 = Debug|x86
+		{EAF48A5B-2891-40F4-B583-1414C9BE6EF9}.Release|x86.ActiveCfg = Release|x86
+		{EAF48A5B-2891-40F4-B583-1414C9BE6EF9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

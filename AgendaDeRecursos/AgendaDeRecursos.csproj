@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAF48A5B-2891-40F4-B583-1414C9BE6EF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AgendaDeRecursos</RootNamespace>
+    <AssemblyName>AgendaDeRecursos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.Calendar">
+      <HintPath>..\..\Bibliotecas\CalendarDemo_003\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmAgenda.Designer.cs">
+      <DependentUpon>AdmAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmAmbiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmAmbiente.Designer.cs">
+      <DependentUpon>AdmAmbiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmCargarItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmCargarItem.Designer.cs">
+      <DependentUpon>AdmCargarItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmCargos.Designer.cs">
+      <DependentUpon>AdmCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmCargosVinculados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmCargosVinculados.Designer.cs">
+      <DependentUpon>AdmCargosVinculados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorCargos.Designer.cs">
+      <DependentUpon>AdministradorCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorCargosVinculados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorCargosVinculados.Designer.cs">
+      <DependentUpon>AdministradorCargosVinculados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorDeAmbientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorDeAmbientes.Designer.cs">
+      <DependentUpon>AdministradorDeAmbientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarCursoSeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarCursoSeccion.designer.cs">
+      <DependentUpon>AdministrarCursoSeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmMatxPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmMatxPlan.Designer.cs">
+      <DependentUpon>AdmMatxPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaAgrupaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaAgrupaciones.designer.cs">
+      <DependentUpon>AltaAgrupaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmInstancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmInstancia.designer.cs">
+      <DependentUpon>AdmInstancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio.cs" />
+    <Compile Include="educacionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>educacionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorInstancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorInstancia.designer.cs">
+      <DependentUpon>AdministradorInstancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmPlanEstudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmPlanEstudio.Designer.cs">
+      <DependentUpon>AdmPlanEstudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmMateriaPorPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmMateriaPorPlan.Designer.cs">
+      <DependentUpon>AdmMateriaPorPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal_InvocadorForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SesionBD.cs" />
+    <EmbeddedResource Include="AdmAgenda.resx">
+      <DependentUpon>AdmAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmAmbiente.resx">
+      <DependentUpon>AdmAmbiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmCargarItem.resx">
+      <DependentUpon>AdmCargarItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmCargos.resx">
+      <DependentUpon>AdmCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmCargosVinculados.resx">
+      <DependentUpon>AdmCargosVinculados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorCargos.resx">
+      <DependentUpon>AdministradorCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorCargosVinculados.resx">
+      <DependentUpon>AdministradorCargosVinculados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorDeAmbientes.resx">
+      <DependentUpon>AdministradorDeAmbientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarCursoSeccion.resx">
+      <DependentUpon>AdministrarCursoSeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmMateriaPorPlan.resx">
+      <DependentUpon>AdmMateriaPorPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmMatxPlan.resx">
+      <DependentUpon>AdmMatxPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaAgrupaciones.resx">
+      <DependentUpon>AltaAgrupaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmInstancia.resx">
+      <DependentUpon>AdmInstancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorInstancia.resx">
+      <DependentUpon>AdministradorInstancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmPlanEstudio.resx">
+      <DependentUpon>AdmPlanEstudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="educacionDataSet.xsc">
+      <DependentUpon>educacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="educacionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>educacionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="educacionDataSet.xss">
+      <DependentUpon>educacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
